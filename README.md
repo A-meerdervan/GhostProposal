@@ -1,7 +1,10 @@
 # GhostProposal
 Name: Alex van der Meer
+
 Email: a.meerdervan@gmail.com
+
 Student number: 10400958
+
 Date: 18-09-2015
 
 Title of the application: Ghost – The word game

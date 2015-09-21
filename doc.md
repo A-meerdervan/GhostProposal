@@ -9,7 +9,7 @@ a.meerdervan@gmail.com
 ###Design deciscions
 
 I added a pdf containing a class diagram of the app. This is visible in Figure 1. 
-![Alt text](UML.png)
+![Alt text](UML.jpg)
 Class diagram of the Ghost App
 
 All android activity's are represented by a class diagram, additional to these activity's there are three other classes. 

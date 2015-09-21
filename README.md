@@ -20,3 +20,7 @@ Features that go beyond the requirements:
 - 5.	In the settings menu next to setting the language, two options are to clear all high scores and clear all usernames. This might come in handy after a while. 
 - 6.	When in the game, there will be a pause button. From the pause screen it is possible to reset the match (this will have the same users) and to change the players. The last option will go to the screen where users enter there user name. By making this distinction the path is shorter when the same players want to start a new game. 
 
+![Alt text](pic1.jpg)
+Pic1 Connections between screens
+![Alt text](pic2.jpg)
+Pic2 Connections between screens

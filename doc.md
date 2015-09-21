@@ -8,7 +8,11 @@ a.meerdervan@gmail.com
 
 ###Design deciscions
 
-I added a pdf containing a class diagram of the app. All android activity's are represented by a class diagram, additional to these activity's there are three other classes. 
+I added a pdf containing a class diagram of the app. This is visible in Figure 1. 
+![Alt text](UML.png)
+Class diagram of the Ghost App
+
+All android activity's are represented by a class diagram, additional to these activity's there are three other classes. 
 Next these other classes and their relevance are discussed per class. 
 
 ###The GameEngine class
@@ -22,5 +26,10 @@ The current players are used in the GhostGameActivity class to be able to displa
 For more comfort for the user, all previously used player names displayed in these same boxes. The history of players can be accesed trough the PlayersArray atribute in the Players class. Here only the names of the players are required, however the GhostHighscoresActivity class needs both the names and the scores. To combine this the PlayersArray atribute combines player scores and names. This is done using objects of a Player class with atributes score and name. Now we will discuss the methods that the Players class needs. It needs to be able to add new players, hence the AddPlayer method. In the settings activity there is an option to remove all players hence the RemoveAllPlayers method. The app should remember its user history after closing, therefore there are two methods added, 1 that fills the class from a file and one that writes to a file. 
 The last method to be discussed is the SortArrayOnHighscore method. The highscores page should display the highscores in order, this method takes care of this. 
 
+###A description per activity class. 
+
+In the activtity classes in the class diagram in the pdf most activities have little to no atributes. For the methods most are simply methods that handle button clicks and switch between screens. 
+The other methods and the atributes that they need will be discusses hereafter. 
+The first time that the user ever starts the app, the InitialSetupActivity will be shown. This screen lets the user view the rules or continue to 
 
 

@@ -9,7 +9,9 @@ a.meerdervan@gmail.com
 ###Design deciscions
 
 I added a pdf containing a class diagram of the app. This is visible in Figure 1. 
+
 ![Alt text](UML.jpg)
+
 Figure 1. Class diagram of the Ghost App
 
 All android activity's are represented by a class diagram, additional to these activity's there are three other classes. 
@@ -36,47 +38,55 @@ The first time that the user ever starts the app, the InitialSetupActivity will 
 A sketch of this screen is visible in Figure 2. 
 
 ![Alt text](GISAS.jpg)
+
 Figure 2. A sketch of the InitialSetupActivity screen
 
 ###GhostSetupActivity
 The second screen (or later the first screen) after starting the app displays two edittexts where the name of player1 and player2 have to be filled in. However when the game is played before the privous player is visible in the textbox so that one can click continue imidiately. On clicking an edittext the history of player names will come out as a dropdown for convienience. 
 
 ![Alt text](GSAS.jpg)
+
 Figure 3. A sketch of the GhostSetupActivity screen
 
 ###GhostGameActivity
 This activity is used for both player1 and player2 to show the progress of the game, this yields faster rendering and less code. The users can enter a letter using an edittext input, the onClick method of a button that passes this user input checks if the input is only one letter. The class has an AddLetter method that takes adds the letter to the current WordFragment and runs the method of the GameEngine class to determine wheter the game ends or continues. To know whoose turn it is, the class has a CurrentPlayer atribute. Almost all other activities have a buttion to go to the settings screen, this one has a button to go to a pause screen. This was done, so that the user would be able to view the rules and start a new game while playing the game.
 
 ![Alt text](GGAS.jpg)
+
 Figure 4. A sketch of the GhostGameActivity screen 
 
 ###GhostPauseActivity
 Here the intro of the last section on this activity is expanded. The screen offers two options to start a new game. "Reset Match" is used to reset the match imediately with the same users, while "Change players" redirects the user to the screen before the game where player names can be selected. This is done to decrease the path of a user that wants to play a new game with the same users. From this screen the settings tab can also be opened. For the unlikely case that a user forgot the rules of the game while playing, their is a button "view rules" that opens the rules activity. 
 
 ![Alt text](GPAS.jpg)
+
 Figure 5. A sketch of the GhostPauseActivity screen 
 
 ###WinnerScreenActivity
 This class recieves the reason for winning and who won via putextra on the intent of the game activity. These are simply displayed on the screen using textviews. The screen has buttons to navigate to the highscores, or if the user is not interested, a button to start a new match. 
 
 ![Alt text](GWSAS.jpg)
+
 Figure 6. A sketch of the WinnerScreenActivity
 
 ###GhostSettingsActivity
 This screen contains only 3 options. Set the language which is then altered in the GameEngine class so that all activities can exces this change. The second option is to clear all usernames, this of course also clears all highscores. The last option is to clear all highscores. Since all usernames and scores are stored in the Players class, this class is called. 
 
 ![Alt text](settings.jpg)
+
 Figure 7. A sketch of the GhostSettingsActivity screen 
 ###GhostHighScoresActivity
 On this screen is a list of highscores visible. First the Players class calls the sortbyHighscore method and then all players are listed. To start a new match from this screen there is a button added. 
 
 ![Alt text](GHAS.jpg)
+
 Figure 8. A sketch of the GhostHighscores screen
 ###GhostRulesActivity
 This screen simply displays the rules. These are stored in a string object of this class. 
 However it does have the familiar settings button
 
 ![Alt text](GRAS.jpg)
+
 Figure 9. A sketch of the GhostRulesActivity screen  
 
 
